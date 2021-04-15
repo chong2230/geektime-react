@@ -1,0 +1,213 @@
+.page {
+    min-width: 1200px;
+    margin-top: 60px;
+}
+
+.main {
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    width: 1080px;
+    margin: 0 auto 60px;
+    padding-top: 50px;
+    .left {
+        .products {
+            margin-top: 30px;
+            width: 711px;
+        }
+    }
+    .right {
+        width: 305px;
+        padding-bottom: 50px;
+    }
+}
+
+.explore {
+    margin-bottom: 26px;
+    .top {
+        justify-content: space-between;
+        padding-right: 8px;
+        .title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #353535;
+        }
+        .view-all {
+            font-size: 13px;
+            font-weight: 400;
+            color: #888;
+            cursor: pointer;
+        }
+    }
+    ul {
+        margin-top: 12px;
+        li {
+            position: relative;
+            justify-content: space-between;
+            width: 171px;
+            height: 56px;
+            padding: 0 13px 0 10px;
+            margin-right: 9px;
+            vertical-align: top;
+            background: #f6f7fa;
+            border-radius: 5px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+    }
+}
+
+.lecture-info {
+    height: 32px;
+    .name {
+        width: 112px;
+        line-height: 18px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #353535;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        transition: color 0.2s ease;
+    }
+    .desc {
+        margin-top: -3px;
+        margin-left: -11px;
+        font-size: 13px;
+        font-weight: 400;
+        color: #888;
+        transform: scale(0.8);
+    }
+}
+
+.lecture-img {
+    position: relative;
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.my-course {
+    display: flex;
+    flex: 0 0 110px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    .course-btn {
+        margin-right: 12px;
+        width: 120px;
+    }
+}
+
+.products-info {
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 1px solid rgba(233, 233, 233, 0.6);
+    .conditions {
+        display: flex;
+        a.active {
+            font-weight: 500;
+            color: #666565;
+        }
+        a {
+            color: #888;
+            padding-right: 20px;
+            font-size: 13px;
+            font-weight: 400;
+            margin-right: 20px;
+            position: relative;
+            span {
+                width: 8px;
+                height: 13px;
+                margin-left: 5px;
+            }
+            .up {
+                border-bottom: 4px solid #b2b2b2;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                width: 0;
+                height: 0;
+                margin-bottom: 2px;
+                &.active {
+                    border-bottom: 4px solid #fa8919;
+                }
+            }
+            .down {
+                border-top: 4px solid #b2b2b2;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                width: 0;
+                height: 0;
+                &.active {
+                    border-top: 4px solid #fa8919;
+                }
+            }
+        }
+    }
+    .count {
+        font-size: 12px;
+        color: #888;
+        font-weight: 400;
+    }
+}
+
+.types-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 711px;
+    min-height: 180px;
+    ;
+    box-sizing: border-box;
+    border-radius: 2px;
+    box-shadow: 0px 2px 10px 0px rgb(46 61 72 / 5%);
+    .type-item {
+        margin-top: 14px;
+        display: flex;
+        align-items: baseline;
+        position: relative;
+        z-index: 10;
+        padding: 0 20px;
+        max-height: 74px;
+        overflow: hidden;
+        .type-labels {
+            flex-wrap: wrap;
+            a:hover {
+                color: $baseColor;
+            }
+        }
+        span {
+            min-width: 50px;
+            padding-top: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #353535;
+        }
+        .label {
+            position: relative;
+            margin-right: 5px;
+            margin-bottom: 12px;
+            padding: 0 12px;
+            height: 22px;
+            line-height: 22px;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 14px;
+            color: #888;
+            white-space: nowrap;
+        }
+        .choose {
+            font-weight: 500;
+            // color: #fa8919;
+            color: $baseColor;
+            background: #fbf5ee;
+        }
+    }
+}
+
+.types-sec.hover {
+    .type-item {
+        max-height: unset;
+    }
+}
